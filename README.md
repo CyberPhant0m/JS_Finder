@@ -1,5 +1,5 @@
 # JS_Finder
-En muchas ocasiones es necfesario analizar el codigo para dar con la vulnerabilidad, esta herramienta te ayuda en el proceso de extraccion de codigo JavaScript, facilitando el proceso de analisis.
+En muchas ocasiones es necfesario analizar el código para dar con la vulnerabilidad, esta herramienta te ayuda en el proceso de extracción de codigo JavaScript, facilitando el proceso de análisis.
 # USO
 ![Funcionamiento de la herramienta](https://github.com/CyberPhant0m/JS_Finder/blob/main/img/JS_Finder.png)
 # Requerimientos
