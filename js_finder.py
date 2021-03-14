@@ -31,7 +31,7 @@ def main(url):
 
             for js in script_js:
                 if js.get('src') == None:
-                    print(Back.YELLOW + Fore.WHITE + "Codigo incluido - No externo:" + Back.RESET + Fore.RESET)
+                    print(Back.YELLOW + Fore.WHITE + "\nCodigo incluido - No externo:" + Back.RESET + Fore.RESET)
                     print(Back.BLACK+ Fore.WHITE + f"{js.prettify()}" + Back.RESET + Fore.RESET)
                 else:
                     if js.get('src').startswith("http://") or js.get('src').startswith("https://"):
@@ -40,7 +40,7 @@ def main(url):
                         url_js =f"servidor.objetivo.com{js.get('src')}\n" 
                     else:
                         f"servidor.objetivo.com/{js.get('src')}\n" 
-                    print(Back.GREEN + Fore.WHITE + f"Codigo externo [{js.get('src')}]:" + Back.RESET + Fore.RESET)
+                    print(Back.GREEN + Fore.WHITE + f"\nCodigo externo [{js.get('src')}]:" + Back.RESET + Fore.RESET)
                     print(Back.BLACK+ Fore.WHITE + f"{url_js}" + Back.RESET + Fore.RESET)
                     if download == True:
                         url_download = f"{url}"+js.get("src")
