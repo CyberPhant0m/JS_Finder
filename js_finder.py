@@ -36,10 +36,10 @@ def main(url):
                 else:
                     if js.get('src').startswith("http://") or js.get('src').startswith("https://"):
                         url_js = f"{js.get('src')}"
-                    if js.get('src').startswith("/"):
+                    if js.get('src').endswith("/"):
                         url_js =f"servidor.objetivo.com{js.get('src')}\n" 
                     else:
-                        f"servidor.objetivo.com/{js.get('src')}\n" 
+                        url_js = f"servidor.objetivo.com/{js.get('src')}\n" 
                     print(Back.GREEN + Fore.WHITE + f"\nCodigo externo [{js.get('src')}]:" + Back.RESET + Fore.RESET)
                     print(Back.BLACK+ Fore.WHITE + f"{url_js}" + Back.RESET + Fore.RESET)
                     if download == True:
